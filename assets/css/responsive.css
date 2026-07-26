@@ -155,6 +155,20 @@ MOBILE
 
 @media (max-width:767px){
 
+.product-search{
+
+margin-bottom:26px;
+
+}
+
+.product-search input{
+
+height:54px;
+
+font-size:15px;
+
+}
+
 section{
 
 padding:65px 0;
