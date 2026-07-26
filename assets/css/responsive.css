@@ -65,17 +65,6 @@ TABLET
 NAVBAR
 ========================= */
 
-.navbar-wrapper{
-
-width:94%;
-
-display:flex;
-align-items:center;
-justify-content:space-between;
-flex-wrap:wrap;
-
-}
-
 .navbar-collapse{
 
 width:100%;
