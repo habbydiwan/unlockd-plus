@@ -448,6 +448,10 @@ margin:0 0 14px;
 
 object-fit:contain;
 
+display:block;
+
+margin-left:10px;
+
 }
 
 .product-category{
@@ -561,6 +565,18 @@ color:#fff;
 .product-card button.out-stock{
 
 width:90px;
+
+}
+
+.product-top{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+margin-bottom:12px;
 
 }
     
