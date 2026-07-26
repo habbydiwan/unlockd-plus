@@ -518,53 +518,63 @@ opacity:.8;
 
 }
     
-.product-card button{
+.product-btn{
 
 position:absolute;
 
 right:18px;
-
 bottom:18px;
 
-width:46px;
-
-height:46px;
-
-border-radius:999px;
-
-padding:0;
+width:74px;
+height:34px;
 
 display:flex;
-
+align-items:center;
 justify-content:center;
 
-align-items:center;
+border-radius:999px;
 
 font-size:0;
 
 background:linear-gradient(
-90deg,
+135deg,
 #2563EB,
 #38BDF8
 );
 
+flex-shrink:0;
+
 }
 
-.product-card button::after{
+.product-btn::after{
 
 content:"→";
 
-font-size:20px;
+font-size:18px;
 
 font-weight:700;
 
 color:#fff;
 
 }
-    
-.product-card button.out-stock{
 
-width:90px;
+.product-btn.out-stock{
+
+width:92px;
+
+font-size:13px;
+
+background:#6B7280;
+
+}
+
+.product-btn.out-stock::after{
+
+content:"Stock Habis";
+
+font-size:11px;
+
+font-weight:600;
 
 }
 
