@@ -475,6 +475,12 @@ Footer
 
 @media(max-width:991px){
 
+.navbar-wrapper{
+
+    width:94%;
+
+}
+
 .footer-grid{
 
 grid-template-columns:1fr 1fr;
