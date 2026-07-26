@@ -167,8 +167,10 @@ LAYOUT
     align-items:center;
     justify-content:space-between;
 
-}
+    flex-wrap:wrap;
+    position:relative;
 
+}
 section{
 
     padding:90px 0;
@@ -356,6 +358,24 @@ UTILITY
 .navbar-toggler{
 
     padding:0;
+
+}
+
+.navbar-collapse{
+
+    flex-grow:0;
+
+}
+
+.navbar-nav{
+
+    align-items:center;
+
+}
+
+.navbar-toggler{
+
+    margin-left:auto;
 
 }
 
