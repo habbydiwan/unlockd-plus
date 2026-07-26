@@ -438,20 +438,6 @@ border-radius:22px;
 min-height:165px;
 
 }
-
-.product-top{
-
-position:absolute;
-
-top:16px;
-right:18px;
-left:auto;
-
-display:flex;
-align-items:center;
-gap:10px;
-
-}
     
 .product-logo{
 
@@ -582,9 +568,9 @@ width:90px;
 
 position:absolute;
 
-left:-50px;
+top:16px;
 
-top:0;
+left:98px;
 
 padding:5px 10px;
 
@@ -592,7 +578,22 @@ font-size:11px;
 
 white-space:nowrap;
 
+z-index:5;
+
 }
+
+.discount{
+
+position:absolute;
+
+top:16px;
+
+right:18px;
+
+z-index:5;
+
+}
+    
 }
 
 
