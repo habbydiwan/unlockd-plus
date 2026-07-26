@@ -92,7 +92,7 @@ Rp${product.price}
 
 <button class="product-btn ${product.stock ? "" : "out-stock"}">
 
-${product.stock ? "Beli Sekarang" : "Notify Me!"}
+${product.stock ? "Beli Sekarang" : "Stock Habis"}
 
 </button>
 
