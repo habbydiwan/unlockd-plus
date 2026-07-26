@@ -41,65 +41,69 @@ data-aos="zoom-in"
 <div class="product-top">
 
 <span class="badge ${product.stock ? "badge-hot" : "badge-stock"}">
+
 ${product.stock ? product.badge : "Stock Habis"}
+
 </span>
 
 <span class="discount">
+
 ${product.discount}
+
 </span>
 
 </div>
-
-<div class="product-body">
 
 <img
 src="${product.image}"
 class="product-logo">
 
-<div class="product-content">
-
 <span class="product-category">
+
 ${product.category.toUpperCase()}
+
 </span>
 
 <h3>
+
 ${product.name}
+
 </h3>
-
-<div class="price-group">
-
-<del>
-Rp${product.oldPrice}
-</del>
-
-<h4>
-Rp${product.price}
-</h4>
-
-</div>
 
 <div class="product-meta">
 
-<span>⭐ 4.9</span>
+<span>⭐4.9</span>
 
 <span>⚡ Instant</span>
 
 </div>
 
+<div class="price-group">
+
+<del>
+
+Rp${product.oldPrice}
+
+</del>
+
+<h4>
+
+Rp${product.price}
+
+</h4>
+
 </div>
 
-<button
-class="buy-pill ${product.stock ? "" : "out-stock"}">
+<button class="${product.stock ? "" : "out-stock"}">
 
-${product.stock ? "→" : "!"}
+${product.stock ? "Beli Sekarang →" : "Notify Me"}
 
 </button>
-
-</div>
 
 </a>
 
 `;
+
 });
 
 grid.innerHTML = html;
