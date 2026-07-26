@@ -383,11 +383,6 @@ width:54px;
 
 }
 
-.discount{
-
-opacity:75%;
-
-}
 
 /* ===================================
 COMPACT PRODUCT CARD MOBILE V3
@@ -436,8 +431,6 @@ display:flex;
 justify-content:space-between;
 
 pointer-events:none;
-
-opacity:0,6;
 
 }
 
