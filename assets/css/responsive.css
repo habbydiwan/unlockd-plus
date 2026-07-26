@@ -46,6 +46,12 @@ grid-template-columns:repeat(3,1fr);
 
 }
 
+.footer-logo{
+
+width:70px;
+
+}
+
 }
 
 
@@ -143,6 +149,12 @@ border-radius:24px;
 .section-heading h2{
 
 font-size:40px;
+
+}
+
+.footer-logo{
+
+width:60px;
 
 }
 
@@ -346,6 +358,12 @@ line-height:1.1;
 
 }
 
+.footer-logo{
+
+width:54px;
+
+}
+
 }
 
 
@@ -434,6 +452,12 @@ padding:0 20px;
 .faq-item.active .faq-answer{
 
 padding:0 20px 20px;
+
+}
+
+.footer-logo{
+
+width:54px;
 
 }
 
