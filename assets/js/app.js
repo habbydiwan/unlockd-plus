@@ -16,11 +16,15 @@ renderProducts(tab.dataset.category);
 
 const grid=document.getElementById("productGrid");
 
-function renderProducts(category="ai"){
+const searchInput = document.getElementById("searchProduct");
+
+function renderProducts(category="ai", customProducts=null){
 
 grid.innerHTML="";
 
-const filtered=products.filter(product=>product.category===category);
+const filtered = customProducts
+    ? customProducts
+    : products.filter(product=>product.category===category);
 
 let html = "";
 
@@ -109,3 +113,67 @@ AOS.refresh();
 }
 
 renderProducts("ai");
+
+searchInput.addEventListener("input",handleSearch);
+
+function handleSearch(){
+
+    const keyword = searchInput.value
+        .trim()
+        .toLowerCase();
+
+    if(keyword===""){
+
+        const active=document.querySelector(".tab.active");
+
+        renderProducts(active.dataset.category);
+
+        return;
+
+    }
+
+    const result = products.filter(product=>
+
+        product.name
+        .toLowerCase()
+        .includes(keyword)
+
+    );
+
+    if(result.length){
+
+        const category=result[0].category;
+
+        tabs.forEach(tab=>{
+
+            tab.classList.remove("active");
+
+            if(tab.dataset.category===category){
+
+                tab.classList.add("active");
+
+            }
+
+        });
+
+        renderProducts(category,result);
+
+    }else{
+
+        grid.innerHTML=`
+
+        <div class="empty-search">
+
+            <i class="bi bi-search"></i>
+
+            <h3>Produk tidak ditemukan</h3>
+
+            <p>Coba gunakan kata kunci lain.</p>
+
+        </div>
+
+        `;
+
+    }
+
+}
