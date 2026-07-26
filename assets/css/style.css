@@ -154,6 +154,21 @@ LAYOUT
 
 }
 
+/* ===========================
+   NAVBAR WRAPPER
+=========================== */
+
+.navbar-wrapper{
+
+    width:min(var(--container),92%);
+    margin:auto;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+}
+
 section{
 
     padding:90px 0;
