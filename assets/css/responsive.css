@@ -341,33 +341,6 @@ font-size:14px;
 border-radius:999px;
 
 }
-
-/* PRODUCT */
-
-.product-grid{
-
-display:grid;
-grid-template-columns:1fr;
-gap:20px;
-
-}
-
-.product-card{
-
-    position:relative;
-
-    display:flex;
-    flex-direction:column;
-
-    padding:18px;
-
-    padding-top:50px;
-
-    min-height:185px;
-
-    border-radius:22px;
-
-}
     
 .product-logo{
     width:72px;
@@ -444,13 +417,11 @@ min-height:165px;
 width:64px;
 height:64px;
 
-margin:0 0 14px;
+margin:0 0 12px;
 
 object-fit:contain;
 
 display:block;
-
-margin-left:10px;
 
 }
 
@@ -466,13 +437,13 @@ margin-bottom:4px;
 
 .product-card h3{
 
-font-size:22px;
-
-line-height:1.2;
-
-margin:6px 0 10px;
+font-size:20px;
 
 font-weight:700;
+
+line-height:1.25;
+
+margin:8px 0;
 
 }
     
@@ -525,36 +496,27 @@ position:absolute;
 right:18px;
 bottom:18px;
 
-width:74px;
-height:34px;
+width:108px;
 
-display:flex;
-align-items:center;
-justify-content:center;
+height:40px;
 
-border-radius:999px;
+border-radius:12px;
 
-font-size:0;
-
-background:linear-gradient(
-135deg,
-#2563EB,
-#38BDF8
-);
-
-flex-shrink:0;
-
-}
-
-.product-btn::after{
-
-content:"→";
-
-font-size:18px;
+font-size:13px;
 
 font-weight:700;
 
-color:#fff;
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+padding:0;
+
+}
+
+flex-shrink:0;
 
 }
 
@@ -565,16 +527,6 @@ width:92px;
 font-size:13px;
 
 background:#6B7280;
-
-}
-
-.product-btn.out-stock::after{
-
-content:"Stock Habis";
-
-font-size:11px;
-
-font-weight:600;
 
 }
 
