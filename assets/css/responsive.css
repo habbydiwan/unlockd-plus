@@ -451,10 +451,10 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 
-margin:0;
+z-index:3;
 
 }
-
+    
 .product-logo{
 
 width:64px;
@@ -585,6 +585,8 @@ width:90px;
 padding:5px 12px;
 
 font-size:11px;
+
+margin-left:56px;
 
 }
 
