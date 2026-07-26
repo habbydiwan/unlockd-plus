@@ -1341,3 +1341,111 @@ padding:0 30px 24px;
 transform:rotate(45deg);
 
 }
+
+/* ==========================
+Footer
+========================== */
+
+.footer{
+
+padding:80px 0 30px;
+
+background:#ffffff;
+
+border-top:1px solid #eef2ff;
+
+margin-top:100px;
+
+}
+
+.footer-grid{
+
+display:grid;
+
+grid-template-columns:2fr 1fr 1fr 1fr;
+
+gap:60px;
+
+}
+
+.footer-logo{
+
+width:180px;
+
+margin-bottom:20px;
+
+}
+
+.footer-brand p{
+
+color:#6b7280;
+
+line-height:1.8;
+
+font-size:15px;
+
+max-width:320px;
+
+}
+
+.footer h4{
+
+margin-bottom:20px;
+
+font-size:18px;
+
+font-weight:700;
+
+color:#111827;
+
+}
+
+.footer ul{
+
+list-style:none;
+
+padding:0;
+
+margin:0;
+
+}
+
+.footer li{
+
+margin-bottom:14px;
+
+color:#6b7280;
+
+}
+
+.footer a{
+
+color:#6b7280;
+
+text-decoration:none;
+
+transition:.3s;
+
+}
+
+.footer a:hover{
+
+color:#2563eb;
+
+}
+
+.footer-bottom{
+
+margin-top:60px;
+
+padding-top:30px;
+
+border-top:1px solid #eef2ff;
+
+text-align:center;
+
+font-size:14px;
+
+color:#94a3b8;
+
+}
