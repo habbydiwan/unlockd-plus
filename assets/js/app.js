@@ -90,9 +90,9 @@ Rp${product.price}
 
 </div>
 
-<button class="${product.stock ? "" : "out-stock"}">
+<button class="product-btn ${product.stock ? "" : "out-stock"}">
 
-${product.stock ? "Beli Sekarang →" : "Notify Me"}
+${product.stock ? "Beli Sekarang" : "Notify Me!"}
 
 </button>
 
