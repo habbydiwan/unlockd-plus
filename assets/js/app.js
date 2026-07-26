@@ -38,17 +38,17 @@ class="product-card ${product.stock ? "" : "stock-empty"}"
 data-aos="zoom-in"
 >
 
-<span class="badge ${product.stock ? "badge-hot" : "badge-stock"}">
+<div class="product-top">
 
-${product.stock ? product.badge : "Stock Habis"}
+    <span class="badge ${product.stock ? "badge-hot" : "badge-stock"}">
+        ${product.stock ? product.badge : "Stock Habis"}
+    </span>
 
-</span>
+    <span class="discount">
+        ${product.discount}
+    </span>
 
-<span class="discount">
-
-${product.discount}
-
-</span>
+</div>
 
 <img
 src="${product.image}"
