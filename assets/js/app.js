@@ -1,0 +1,111 @@
+const tabs=document.querySelectorAll(".tab");
+
+tabs.forEach(tab=>{
+
+tab.addEventListener("click",()=>{
+
+tabs.forEach(btn=>btn.classList.remove("active"));
+
+tab.classList.add("active");
+
+renderProducts(tab.dataset.category);
+
+});
+
+});
+
+const grid=document.getElementById("productGrid");
+
+function renderProducts(category="ai"){
+
+grid.innerHTML="";
+
+const filtered=products.filter(product=>product.category===category);
+
+let html = "";
+
+filtered.forEach(product=>{
+
+html += `
+
+<a
+href="#"
+class="product-card ${product.stock ? "" : "stock-empty"}"
+data-aos="zoom-in"
+>
+
+<div class="product-top">
+
+<span class="badge ${product.stock ? "badge-hot" : "badge-stock"}">
+
+${product.stock ? product.badge : "Stock Habis"}
+
+</span>
+
+<span class="discount">
+
+${product.discount}
+
+</span>
+
+</div>
+
+<img
+src="${product.image}"
+class="product-logo">
+
+<span class="product-category">
+
+${product.category.toUpperCase()}
+
+</span>
+
+<h3>
+
+${product.name}
+
+</h3>
+
+<div class="product-meta">
+
+<span>⭐4.9</span>
+
+<span>⚡ Instant</span>
+
+</div>
+
+<div class="price-group">
+
+<del>
+
+Rp${product.oldPrice}
+
+</del>
+
+<h4>
+
+Rp${product.price}
+
+</h4>
+
+</div>
+
+<button class="${product.stock ? "" : "out-stock"}">
+
+${product.stock ? "Beli Sekarang →" : "Notify Me"}
+
+</button>
+
+</a>
+
+`;
+
+});
+
+grid.innerHTML = html;
+
+AOS.refresh();
+
+}
+
+renderProducts("ai");
