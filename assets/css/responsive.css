@@ -444,14 +444,12 @@ min-height:165px;
 position:absolute;
 
 top:16px;
-left:18px;
 right:18px;
+left:auto;
 
 display:flex;
-justify-content:space-between;
 align-items:center;
-
-z-index:3;
+gap:10px;
 
 }
     
@@ -582,14 +580,19 @@ width:90px;
 
 .badge{
 
-padding:5px 12px;
+position:absolute;
+
+left:-88px;
+
+top:0;
+
+padding:5px 10px;
 
 font-size:11px;
 
-margin-left:60px;
+white-space:nowrap;
 
 }
-
 }
 
 
