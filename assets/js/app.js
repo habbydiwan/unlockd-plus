@@ -108,7 +108,9 @@ ${product.stock ? "Beli Sekarang →" : "Notify Me"}
 
 grid.innerHTML = html;
 
-AOS.refresh();
+if (typeof AOS !== "undefined") {
+    AOS.refresh();
+}
 
 }
 
