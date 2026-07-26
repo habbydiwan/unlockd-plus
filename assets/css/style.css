@@ -1348,13 +1348,17 @@ Footer
 
 .footer{
 
-padding:80px 0 30px;
-
-background:#ffffff;
-
-border-top:1px solid #eef2ff;
+padding:90px 0 35px;
 
 margin-top:100px;
+
+background:linear-gradient(
+135deg,
+#2563eb 0%,
+#38bdf8 100%
+);
+
+color:#fff;
 
 }
 
@@ -1362,29 +1366,31 @@ margin-top:100px;
 
 display:grid;
 
-grid-template-columns:2fr 1fr 1fr 1fr;
+grid-template-columns:2fr 1fr 1fr;
 
-gap:60px;
+gap:70px;
 
 }
 
 .footer-logo{
 
-width:180px;
+width:70px;
 
-margin-bottom:20px;
+height:auto;
+
+margin-bottom:24px;
 
 }
 
 .footer-brand p{
 
-color:#6b7280;
+max-width:340px;
 
 line-height:1.8;
 
 font-size:15px;
 
-max-width:320px;
+color:rgba(255,255,255,.82);
 
 }
 
@@ -1396,7 +1402,7 @@ font-size:18px;
 
 font-weight:700;
 
-color:#111827;
+color:#fff;
 
 }
 
@@ -1412,25 +1418,25 @@ margin:0;
 
 .footer li{
 
-margin-bottom:14px;
-
-color:#6b7280;
+margin-bottom:15px;
 
 }
 
 .footer a{
 
-color:#6b7280;
+color:rgba(255,255,255,.82);
 
 text-decoration:none;
 
-transition:.3s;
+transition:.25s;
 
 }
 
 .footer a:hover{
 
-color:#2563eb;
+color:#ffffff;
+
+padding-left:6px;
 
 }
 
@@ -1438,14 +1444,14 @@ color:#2563eb;
 
 margin-top:60px;
 
-padding-top:30px;
+padding-top:28px;
 
-border-top:1px solid #eef2ff;
+border-top:1px solid rgba(255,255,255,.18);
 
 text-align:center;
 
 font-size:14px;
 
-color:#94a3b8;
+color:rgba(255,255,255,.7);
 
 }
