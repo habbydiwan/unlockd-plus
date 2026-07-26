@@ -1539,21 +1539,3 @@ font-size:14px;
 color:rgba(255,255,255,.7);
 
 }
-
-/* ===========================
-   NAVBAR WRAPPER FIX
-=========================== */
-
-.navbar .wrapper{
-
-display:flex;
-
-align-items:center;
-
-justify-content:space-between;
-
-width:min(var(--container),92%);
-
-margin:auto;
-
-}
