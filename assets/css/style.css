@@ -146,7 +146,7 @@ h1,h2,h3,h4,h5{
 LAYOUT
 ===================================================== */
 
-.container{
+.wrapper{
 
     width:min(var(--container),92%);
 
