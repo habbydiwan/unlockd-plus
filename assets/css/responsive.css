@@ -527,13 +527,6 @@ font-size:13px;
 
 }
 
-/* Hide elemen yang tidak terlalu penting di mobile */
-
-.product-category,
-.product-top .badge{
-
-display:none;
-
 }
 
 /* =========================================================
