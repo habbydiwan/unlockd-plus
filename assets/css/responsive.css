@@ -396,3 +396,45 @@ border-radius:20px;
 }
 
 }
+
+/* FAQ */
+
+@media(max-width:767px){
+
+.faq{
+
+padding:80px 0;
+
+}
+
+.faq-list{
+
+margin-top:40px;
+
+}
+
+.faq-question{
+
+padding:20px;
+
+font-size:16px;
+
+}
+
+.faq-answer{
+
+font-size:14px;
+
+line-height:1.7;
+
+padding:0 20px;
+
+}
+
+.faq-item.active .faq-answer{
+
+padding:0 20px 20px;
+
+}
+
+}
