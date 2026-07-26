@@ -563,36 +563,6 @@ color:#fff;
 width:90px;
 
 }
-
-.badge{
-
-position:absolute;
-
-top:16px;
-
-left:98px;
-
-padding:5px 10px;
-
-font-size:11px;
-
-white-space:nowrap;
-
-z-index:5;
-
-}
-
-.discount{
-
-position:absolute;
-
-top:16px;
-
-right:18px;
-
-z-index:5;
-
-}
     
 }
 
