@@ -1155,3 +1155,71 @@ background:#64748B !important;
 color:white;
 
 }
+
+/* ==========================================
+PRODUCT SEARCH
+========================================== */
+
+.product-search{
+
+position:relative;
+
+max-width:520px;
+
+margin:0 auto 38px;
+
+}
+
+.product-search i{
+
+position:absolute;
+
+left:20px;
+
+top:50%;
+
+transform:translateY(-50%);
+
+font-size:18px;
+
+color:var(--text-light);
+
+pointer-events:none;
+
+}
+
+.product-search input{
+
+width:100%;
+
+height:58px;
+
+padding:0 22px 0 52px;
+
+border:1px solid var(--border);
+
+border-radius:18px;
+
+background:#fff;
+
+font-size:15px;
+
+transition:.25s;
+
+outline:none;
+
+}
+
+.product-search input:focus{
+
+border-color:var(--primary);
+
+box-shadow:0 0 0 4px rgba(37,99,235,.08);
+
+}
+
+.product-search input::placeholder{
+
+color:#94A3B8;
+
+}
