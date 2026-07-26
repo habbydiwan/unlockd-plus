@@ -61,11 +61,54 @@ TABLET
 
 @media (max-width:991px){
 
-.navbar .wrapper{
-        
+/* =========================
+NAVBAR
+========================= */
+
+.navbar-wrapper{
+
 width:94%;
-    
+
+display:flex;
+align-items:center;
+justify-content:space-between;
+flex-wrap:wrap;
+
 }
+
+.navbar-collapse{
+
+width:100%;
+margin-top:20px;
+
+}
+
+.navbar-nav{
+
+text-align:center;
+width:100%;
+
+}
+
+.navbar-nav .nav-link{
+
+display:block;
+padding:14px 0;
+
+}
+
+.navbar .btn-primary{
+
+display:flex;
+justify-content:center;
+width:100%;
+margin-top:18px;
+
+}
+
+/* =========================
+SECTION
+========================= */
 
 section{
 
@@ -133,7 +176,6 @@ display:none;
 
 }
 
-
 /* PRODUCT */
 
 .product-grid{
@@ -165,7 +207,6 @@ width:60px;
 }
 
 }
-
 
 /* =========================================================
 MOBILE
