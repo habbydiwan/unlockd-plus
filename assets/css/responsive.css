@@ -469,7 +469,7 @@ margin-top:70px;
 
 grid-template-columns:1fr;
 
-gap:35px;
+gap:40px;
 
 text-align:center;
 
@@ -477,20 +477,17 @@ text-align:center;
 
 .footer-brand p{
 
-max-width:100%;
-
 margin:auto;
 
 }
 
 .footer-logo{
 
-margin:0 auto 18px;
-
 display:block;
 
-}
+margin:0 auto 20px;
 
+}
 .footer-bottom{
 
 margin-top:40px;
