@@ -1645,3 +1645,35 @@ DARK MODE
     --badge-gray-text:#CBD5E1;
 
 }
+
+/* =====================================
+   DARK MODE COMPONENT OVERRIDE
+===================================== */
+
+:root[data-theme="dark"] .tab{
+
+    background:#1E293B;
+    color:#CBD5E1;
+    border:1px solid #334155;
+
+}
+
+:root[data-theme="dark"] .tab:hover{
+
+    background:#263549;
+    color:#FFFFFF;
+
+}
+
+:root[data-theme="dark"] .tab.active{
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--primary-light)
+    );
+
+    color:#FFFFFF;
+    border-color:transparent;
+
+}
