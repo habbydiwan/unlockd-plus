@@ -382,6 +382,16 @@ UTILITY
 
 }
 
+.navbar-toggler i{
+
+    color:var(--text-main);
+
+    font-size:30px;
+
+    transition:.3s;
+
+}
+
 .navbar-collapse{
 
     flex-grow:0;
