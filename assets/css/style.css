@@ -238,9 +238,9 @@ BUTTON
 
 .btn-secondary{
 
-    background:white;
-
-    border:1px solid #E2E8F0;
+   background:var(--bg-surface);
+   
+   border:1px solid var(--border-soft);
 
     padding:15px 28px;
 
@@ -525,7 +525,7 @@ LOGO
 
     background:rgba(37,99,235,.08);
 
-    color:#2563EB;
+    color:var(--primary);
 
     border-radius:999px;
 
@@ -545,7 +545,7 @@ LOGO
 
     font-weight:800;
 
-    color:#111827;
+    color:var(--text-main);
 
     margin-bottom:10px;
 
@@ -569,7 +569,7 @@ LOGO
 
     margin-top:26px;
 
-    color:#6B7280;
+    color:var(--text-secondary);
 
     font-size:19px;
 
@@ -688,7 +688,7 @@ LOGO
 
     position:absolute;
 
-    background:white;
+    background:var(--card-bg);
 
     border-radius:16px;
 
@@ -782,7 +782,7 @@ POPULAR CATEGORIES
 
     background:#DBEAFE;
 
-    color:#2563EB;
+    color:var(--primary);
 
     font-weight:600;
 
@@ -906,7 +906,7 @@ border-radius:999px;
 
 border:none;
 
-background:#fff;
+background:var(--card-bg);
 
 font-size:15px;
 
@@ -922,9 +922,11 @@ box-shadow:0 8px 25px rgba(0,0,0,.05);
 
 .tab.active{
 
-background:linear-gradient(135deg, #2563EB, #38BDF8);
-
-color:white;
+background:linear-gradient(
+135deg,
+var(--primary),
+var(--primary-light)
+);
 
 }
 
@@ -1010,7 +1012,7 @@ font-size:.78rem;
 
 font-weight:600;
 
-color:#2563EB;
+color:var(--primary);
 
 text-transform:uppercase;
 
@@ -1028,7 +1030,7 @@ font-size:1.6rem;
 
 line-height:1.3;
 
-color:#101828;
+color:var(--text-main);
 
 }
 
@@ -1134,17 +1136,17 @@ font-weight:700;
 
 .badge-hot{
 
-background:#FFF4E5;
+background:var(--badge-warning-bg);
 
-color:#F59E0B;
+color:var(--badge-warning-text);
 
 }
 
 .discount{
 
-background:#FEE2E2;
+background:var(--badge-danger-bg);
 
-color:#DC2626;
+color:var(--badge-danger-text);
 
 padding:7px 12px;
 
@@ -1166,7 +1168,7 @@ margin:18px 0;
 
 font-size:.9rem;
 
-color:#64748B;
+color:var(--text-secondary);
 
 }
 
@@ -1174,7 +1176,7 @@ color:#64748B;
 
 display:block;
 
-color:#94A3B8;
+color:var(--text-muted);
 
 margin-bottom:6px;
 
@@ -1210,9 +1212,9 @@ filter:grayscale(30%);
 
 .badge-stock{
 
-background:#E5E7EB;
+background:var(--badge-gray-bg);
 
-color:#6B7280;
+color:var(--badge-gray-text);
 
 }
 
@@ -1264,11 +1266,11 @@ height:58px;
 
 padding:0 22px 0 52px;
 
-border:1px solid var(--border);
+border:1px solid var(--border-soft);
 
 border-radius:18px;
 
-background:#fff;
+background:var(--bg-surface);
 
 font-size:15px;
 
@@ -1288,7 +1290,7 @@ box-shadow:0 0 0 4px rgba(37,99,235,.08);
 
 .product-search input::placeholder{
 
-color:#94A3B8;
+color:var(--text-muted);
 
 }
 
