@@ -928,6 +928,8 @@ var(--primary),
 var(--primary-light)
 );
 
+color:white;
+
 }
 
 .tab:hover{
