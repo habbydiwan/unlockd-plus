@@ -246,7 +246,7 @@ function applyTheme(theme){
 
 const savedTheme =
 
-localStorage.getItem("theme") || "light";
+localStorage.getItem("theme") || "dark";
 
 applyTheme(savedTheme);
 
