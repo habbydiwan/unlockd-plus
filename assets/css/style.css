@@ -756,7 +756,7 @@ POPULAR CATEGORIES
 
     font-weight:800;
 
-    color:#101828;
+    color:var(--text-main);
 
     margin-top:18px;
 
@@ -1064,7 +1064,7 @@ font-weight:800;
 
 margin-bottom:28px;
 
-color:#101828;
+color:var(--text-main);
 
 }
 
@@ -1279,6 +1279,8 @@ font-size:15px;
 transition:.25s;
 
 outline:none;
+
+color:var(--text-main);
 
 }
 
