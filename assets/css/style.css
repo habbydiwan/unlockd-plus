@@ -117,15 +117,9 @@ html{
 
 body{
 
-    background:var(--bg);
+background:var(--bg-main);
 
-    color:var(--dark);
-
-    font-family:'Inter',sans-serif;
-
-    overflow-x:hidden;
-
-    line-height:1.6;
+color:var(--text-main);
 
 }
 
@@ -348,13 +342,13 @@ UTILITY
 
 .navbar{
 
-    background:rgba(255,255,255,.88);
+    background:var(--navbar-bg);
 
     backdrop-filter:blur(16px);
 
     border-bottom:1px solid rgba(0,0,0,.05);
 
-    box-shadow:0 10px 30px rgba(15,23,42,.06);
+    box-shadow:var(--shadow-navbar);
 
 }
 
@@ -438,7 +432,7 @@ LOGO
 
     padding:90px 0 100px;
 
-    background:#ffffff;
+    background:var(--bg-surface);
 
     margin-top:20px;
 
@@ -952,7 +946,7 @@ gap:28px;
 
 .product-card{
 
-background:white;
+background:var(--card-bg);
 
 border-radius:24px;
 
@@ -964,11 +958,11 @@ display:flex;
 
 flex-direction:column;
 
-border:1px solid #ececec;
+border:1px solid var(--border-light);
 
 transition:.35s;
 
-box-shadow:0 12px 35px rgba(0,0,0,.05);
+box-shadow:var(--shadow-card);
 
 transition:.35s;
 
@@ -978,7 +972,7 @@ transition:.35s;
 
 transform:translateY(-10px);
 
-box-shadow:0 25px 50px rgba(37,99,235,.15);
+box-shadow:var(--shadow-card-hover);
 
 }
 
@@ -1589,7 +1583,7 @@ margin-top:60px;
 
 padding-top:28px;
 
-border-top:1px solid rgba(255,255,255,.18);
+border-top:1px solid var(--footer-border);
 
 text-align:center;
 
