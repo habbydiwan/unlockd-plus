@@ -1713,3 +1713,62 @@ DARK MODE
         0 10px 25px rgba(37,99,235,.25);
 
 }
+
+/* ==========================================
+THEME TOGGLE
+========================================== */
+
+.theme-toggle{
+
+width:48px;
+height:48px;
+
+margin-right:18px;
+
+border:none;
+
+border-radius:50%;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+background:var(--card-bg);
+
+border:1px solid var(--border-soft);
+
+cursor:pointer;
+
+transition:.3s;
+
+color:var(--text-main);
+
+}
+
+.theme-toggle:hover{
+
+transform:translateY(-2px);
+
+border-color:var(--primary);
+
+}
+
+.theme-toggle i{
+
+font-size:18px;
+
+transition:.3s;
+
+}
+
+:root[data-theme="dark"] .theme-toggle{
+
+background:#162033;
+
+border-color:#334155;
+
+color:#F8FAFC;
+
+}
