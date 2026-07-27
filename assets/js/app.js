@@ -203,3 +203,67 @@ item.classList.toggle("active");
 });
 
 });
+
+/* ==========================================
+DARK MODE
+========================================== */
+
+const html = document.documentElement;
+
+const toggle = document.getElementById("themeToggle");
+
+const logo = document.getElementById("navbarLogo");
+
+const themeColor = document.querySelector('meta[name="theme-color"]');
+
+function applyTheme(theme){
+
+    html.setAttribute("data-theme", theme);
+
+    localStorage.setItem("theme", theme);
+
+    if(theme==="dark"){
+
+        logo.src="assets/img/logo/logo-full-dark.png";
+
+        toggle.innerHTML='<i class="bi bi-sun-fill"></i>';
+
+        themeColor.setAttribute("content","#0F172A");
+
+    }
+
+    else{
+
+        logo.src="assets/img/logo/logo-full.png";
+
+        toggle.innerHTML='<i class="bi bi-moon-stars-fill"></i>';
+
+        themeColor.setAttribute("content","#2563EB");
+
+    }
+
+}
+
+const savedTheme =
+
+localStorage.getItem("theme") || "light";
+
+applyTheme(savedTheme);
+
+toggle.addEventListener("click",()=>{
+
+const current=
+
+html.getAttribute("data-theme");
+
+applyTheme(
+
+current==="dark"
+
+? "light"
+
+: "dark"
+
+);
+
+});
