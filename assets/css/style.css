@@ -56,6 +56,50 @@
 }
 
 /* =====================================================
+COLOR TOKENS
+===================================================== */
+
+/* Background */
+--bg-main:#F8FAFC;
+--bg-surface:#FFFFFF;
+--bg-soft:#F1F5F9;
+
+/* Text */
+--text-main:#111827;
+--text-secondary:#64748B;
+--text-muted:#94A3B8;
+
+/* Border */
+--border-light:#ECECEC;
+--border-soft:#E2E8F0;
+
+/* Card */
+--card-bg:#FFFFFF;
+--card-hover:#FFFFFF;
+
+/* Badge */
+--badge-warning-bg:#FFF4E5;
+--badge-warning-text:#F59E0B;
+
+--badge-danger-bg:#FEE2E2;
+--badge-danger-text:#DC2626;
+
+--badge-gray-bg:#E5E7EB;
+--badge-gray-text:#6B7280;
+
+/* Navbar */
+--navbar-bg:rgba(255,255,255,.88);
+
+/* Footer */
+--footer-text:rgba(255,255,255,.82);
+--footer-border:rgba(255,255,255,.18);
+
+/* Shadow */
+--shadow-card:0 12px 35px rgba(0,0,0,.05);
+--shadow-card-hover:0 25px 50px rgba(37,99,235,.15);
+--shadow-navbar:0 10px 30px rgba(15,23,42,.06);
+
+/* =====================================================
 RESET
 ===================================================== */
 
