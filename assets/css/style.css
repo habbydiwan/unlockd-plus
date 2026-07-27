@@ -344,7 +344,7 @@ UTILITY
 
     background:var(--navbar-bg);
 
-    backdrop-filter:blur(16px);
+    backdrop-filter:blur(22px);
 
     border-bottom:1px solid rgba(0,0,0,.05);
 
@@ -1192,6 +1192,8 @@ font-weight:800;
 
 margin-bottom:20px;
 
+color:var(--text-main);
+
 }
 
 /* ==========================
@@ -1616,7 +1618,7 @@ DARK MODE
     --text-muted:#94A3B8;
 
     /* Border */
-    --border-light:#273449;
+    --border-light:#31425D;
     --border-soft:#334155;
 
     /* Card */
@@ -1624,7 +1626,7 @@ DARK MODE
     --card-hover:#1B263B;
 
     /* Navbar */
-    --navbar-bg:rgba(15,23,42,.88);
+    --navbar-bg:rgba(17,24,39,.75);
 
     /* Footer */
     --footer-text:rgba(255,255,255,.82);
@@ -1675,5 +1677,39 @@ DARK MODE
 
     color:#FFFFFF;
     border-color:transparent;
+
+}
+
+:root[data-theme="dark"] .product-search input{
+
+    background:#162033;
+    border-color:#334155;
+    color:#F8FAFC;
+
+}
+
+:root[data-theme="dark"] .product-search input:focus{
+
+    border-color:#38BDF8;
+
+    box-shadow:
+        0 0 0 4px rgba(56,189,248,.12);
+
+}
+
+:root[data-theme="dark"] .hero{
+
+    background:
+    radial-gradient(circle at top left,
+    rgba(37,99,235,.08),
+    transparent 35%),
+    var(--bg-surface);
+
+}
+
+:root[data-theme="dark"] .product-btn{
+
+    box-shadow:
+        0 10px 25px rgba(37,99,235,.25);
 
 }
