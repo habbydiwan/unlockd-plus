@@ -203,22 +203,3 @@ item.classList.toggle("active");
 });
 
 });
-
-
-function updateLogo(){
-
-    const logo=document.getElementById("navbarLogo");
-
-    if(!logo) return;
-
-    if(document.documentElement.dataset.theme==="dark"){
-
-        logo.src="assets/img/logo/logo-darkmode.png";
-
-    }else{
-
-        logo.src="assets/img/logo/logo-full.png";
-
-    }
-
-}
