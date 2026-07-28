@@ -315,6 +315,122 @@ document.getElementById("modalOldPrice");
 const closeModal =
 document.querySelector(".order-close");
 
+/* ==========================================
+ORDER FORM VALIDATION
+========================================== */
+
+function clearValidation(){
+
+    document
+    .querySelectorAll(".input-error")
+    .forEach(el=>el.classList.remove("input-error"));
+
+    document
+    .querySelectorAll(".error-message")
+    .forEach(el=>el.remove());
+
+}
+
+function showError(input,message){
+
+    input.classList.add("input-error");
+
+    const error=document.createElement("small");
+
+    error.className="error-message";
+
+    error.textContent=message;
+
+    input.parentNode.appendChild(error);
+
+}
+
+function validateOrderForm(){
+
+    clearValidation();
+
+    let valid=true;
+
+    const name=document.getElementById("customerName");
+
+    const email=document.getElementById("customerEmail");
+
+    const phone=document.getElementById("customerPhone");
+
+    const note=document.getElementById("customerNote");
+
+
+
+    if(name.value.trim()===""){
+
+        showError(name,"Nama lengkap wajib diisi.");
+
+        valid=false;
+
+    }
+
+
+
+    if(email.value.trim()===""){
+
+        showError(email,"Email wajib diisi.");
+
+        valid=false;
+
+    }else{
+
+        const emailRegex=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if(!emailRegex.test(email.value.trim())){
+
+            showError(email,"Format email tidak valid.");
+
+            valid=false;
+
+        }
+
+    }
+
+
+
+    if(phone.value.trim()===""){
+
+        showError(phone,"Nomor WhatsApp wajib diisi.");
+
+        valid=false;
+
+    }else{
+
+        const number=phone.value.replace(/\D/g,"");
+
+        const regex=/^(08|628)[0-9]{8,13}$/;
+
+        if(!regex.test(number)){
+
+            showError(phone,"Nomor WhatsApp tidak valid.");
+
+            valid=false;
+
+        }
+
+    }
+
+
+
+    if(note.value.trim()===""){
+
+        showError(note,"Catatan wajib diisi.");
+
+        valid=false;
+
+    }
+
+
+
+    return valid;
+
+}
+
 function openOrderModal(product){
 
     modalLogo.src=product.image;
@@ -390,5 +506,61 @@ grid.addEventListener("click", (e) => {
         image: card.dataset.image
 
     });
+
+});
+
+/* ==========================================
+ORDER SUBMIT
+========================================== */
+
+document
+.querySelector(".order-submit")
+.addEventListener("click",()=>{
+
+    if(!validateOrderForm()){
+
+        return;
+
+    }
+
+    console.log("VALID");
+
+});
+
+/* ==========================================
+REMOVE ERROR WHEN TYPING
+========================================== */
+
+[
+"customerName",
+"customerEmail",
+"customerPhone",
+"customerNote"
+
+].forEach(id=>{
+
+const input=document.getElementById(id);
+
+input.addEventListener("input",()=>{
+
+input.classList.remove("input-error");
+
+const error=input.parentNode.querySelector(".error-message");
+
+if(error){
+
+error.remove();
+
+}
+
+});
+
+});
+
+const phoneInput=document.getElementById("customerPhone");
+
+phoneInput.addEventListener("input",()=>{
+
+phoneInput.value=phoneInput.value.replace(/[^\d]/g,"");
 
 });
