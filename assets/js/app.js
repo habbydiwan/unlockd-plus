@@ -90,7 +90,20 @@ Rp${product.price}
 
 </div>
 
-<button class="product-btn ${product.stock ? "" : "out-stock"}">
+<button
+class="product-btn ${product.stock ? "" : "out-stock"}"
+
+${product.stock
+? `
+data-name="${product.name}"
+data-category="${product.category}"
+data-price="${product.price}"
+data-oldprice="${product.oldPrice}"
+data-image="${product.image}"
+`
+: ""}
+
+>
 
 ${product.stock ? "Beli Sekarang" : "Stock Habis"}
 
@@ -265,5 +278,107 @@ current==="dark"
 : "dark"
 
 );
+
+});
+
+/* ==========================================
+ORDER MODAL
+========================================== */
+
+const orderModal =
+document.getElementById("orderModal");
+
+const modalLogo =
+document.getElementById("modalProductLogo");
+
+const modalName =
+document.getElementById("modalProductName");
+
+const modalCategory =
+document.querySelector(".modal-category");
+
+const modalPrice =
+document.getElementById("modalPrice");
+
+const modalOldPrice =
+document.getElementById("modalOldPrice");
+
+const closeModal =
+document.querySelector(".order-close");
+
+function openOrderModal(product){
+
+    modalLogo.src=product.image;
+
+    modalName.textContent=product.name;
+
+    modalCategory.textContent=
+        product.category.toUpperCase();
+
+    modalPrice.textContent=
+        "Rp"+product.price;
+
+    modalOldPrice.textContent=
+        "Rp"+product.oldPrice;
+
+    orderModal.classList.add("active");
+
+    document.body.style.overflow="hidden";
+
+}
+
+function closeOrderModal(){
+
+    orderModal.classList.remove("active");
+
+    document.body.style.overflow="";
+
+}
+
+closeModal.addEventListener(
+
+"click",
+
+closeOrderModal
+
+);
+
+document
+.querySelector(".order-overlay")
+
+.addEventListener(
+
+"click",
+
+closeOrderModal
+
+);
+
+document.addEventListener(
+
+"click",
+
+e=>{
+
+const btn=e.target.closest(".product-btn");
+
+if(!btn) return;
+
+if(btn.classList.contains("out-stock"))
+return;
+
+openOrderModal({
+
+name:btn.dataset.name,
+
+category:btn.dataset.category,
+
+price:btn.dataset.price,
+
+oldPrice:btn.dataset.oldprice,
+
+image:btn.dataset.image
+
+});
 
 });
