@@ -2150,3 +2150,33 @@ transition:.3s;
 transform:translateY(-2px);
 
 }
+
+.modal-tags{
+
+display:flex;
+
+justify-content:center;
+
+gap:10px;
+
+flex-wrap:wrap;
+
+margin-bottom:16px;
+
+}
+
+.modal-badge{
+
+padding:7px 14px;
+
+border-radius:999px;
+
+background:var(--badge-warning-bg);
+
+color:var(--badge-warning-text);
+
+font-size:12px;
+
+font-weight:700;
+
+}
