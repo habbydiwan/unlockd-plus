@@ -33,8 +33,9 @@ filtered.forEach(product=>{
 html += `
 
 <a
-href="javascript:void(0)"
+href=""
 class="product-card ${product.stock ? "" : "stock-empty"}"
+data-product-id="${product.id}"
 data-aos="zoom-in"
 >
 
@@ -188,6 +189,21 @@ function handleSearch(){
     }
 
 }
+
+document.querySelectorAll(".product-card").forEach(card => {
+
+    card.addEventListener("click", function(e){
+
+        e.preventDefault();
+
+        const id = this.dataset.productId;
+
+        openOrderModal(id);
+
+    });
+
+});
+
 
 /* ==========================
 FAQ
