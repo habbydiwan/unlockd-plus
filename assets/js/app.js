@@ -33,7 +33,7 @@ filtered.forEach(product=>{
 html += `
 
 <a
-href="#"
+href="javascript:void(0)"
 class="product-card ${product.stock ? "" : "stock-empty"}"
 data-aos="zoom-in"
 >
