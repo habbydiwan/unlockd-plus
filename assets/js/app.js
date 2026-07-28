@@ -494,7 +494,28 @@ function redirectToWhatsApp(){
 
 }
 
+function redirectStockWhatsApp(product){
 
+    const adminNumber = "6281717893400";
+
+    const message = `Halo Admin UNLOCKD+ 👋
+
+Saya tertarik dengan produk berikut:
+
+📦 ${product.name}
+
+Namun saat saya cek statusnya masih *Stock Habis*.
+
+Mohon kabari saya jika produk ini sudah tersedia kembali.
+
+Terima kasih 🙏`;
+
+    const url =
+`https://wa.me/${adminNumber}?text=${encodeURIComponent(message)}`;
+
+    window.open(url,"_blank");
+
+}
 
 function openOrderModal(product){
 
@@ -564,7 +585,17 @@ grid.addEventListener("click", (e) => {
 
     e.preventDefault();
 
-    if (card.dataset.stock === "false") return;
+    if(card.dataset.stock==="false"){
+
+    redirectStockWhatsApp({
+
+        name:card.dataset.name
+
+    });
+
+    return;
+
+}
 
     openOrderModal({
 
