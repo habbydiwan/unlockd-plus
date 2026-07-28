@@ -446,9 +446,15 @@ function openOrderModal(product){
     modalOldPrice.textContent=
         "Rp"+product.oldPrice;
 
+    clearValidation();
+
+document.querySelector(".order-form").reset();
+
     orderModal.classList.add("active");
 
     document.body.style.overflow="hidden";
+
+    document.getElementById("customerName").focus();
 
 }
 
@@ -562,5 +568,23 @@ const phoneInput=document.getElementById("customerPhone");
 phoneInput.addEventListener("input",()=>{
 
 phoneInput.value=phoneInput.value.replace(/[^\d]/g,"");
+
+});
+
+document.addEventListener("keydown",(e)=>{
+
+    if(
+
+        e.key==="Escape"
+
+        &&
+
+        orderModal.classList.contains("active")
+
+    ){
+
+        closeOrderModal();
+
+    }
 
 });
