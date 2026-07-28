@@ -1803,6 +1803,14 @@ padding:24px;
 
 overflow-y:auto;
 
+z-index:9999;
+
+opacity:0;
+
+visibility:hidden;
+
+pointer-events:none;
+
 }
 
 .order-modal.active{
@@ -1835,9 +1843,13 @@ width:100%;
 
 max-width:520px;
 
-max-height:calc(100vh - 48px);
+max-height:min(90vh,900px);
 
-overflow-y:auto;
+overflow:hidden;
+
+display:flex;
+
+flex-direction:column;
 
 background:var(--card-bg);
 
@@ -1903,9 +1915,23 @@ justify-content:center;
 
 .order-header{
 
+flex-shrink:0;
+
 text-align:center;
 
 margin-bottom:20px;
+
+}
+
+.order-form{
+
+display:flex;
+
+flex-direction:column;
+
+overflow-y:auto;
+
+padding-right:4px;
 
 }
 
@@ -2038,6 +2064,8 @@ background:var(--bg-soft);
 border-radius:16px;
 
 font-size:14px;
+
+flex-shrink:0;
 
 }
 
