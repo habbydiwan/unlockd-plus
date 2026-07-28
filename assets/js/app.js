@@ -33,9 +33,15 @@ filtered.forEach(product=>{
 html += `
 
 <a
-href=""
+href="javascript:void(0)"
 class="product-card ${product.stock ? "" : "stock-empty"}"
 data-product-id="${product.id}"
+data-name="${product.name}"
+data-category="${product.category}"
+data-price="${product.price}"
+data-oldprice="${product.oldPrice}"
+data-image="${product.image}"
+data-stock="${product.stock}"
 data-aos="zoom-in"
 >
 
@@ -190,19 +196,6 @@ function handleSearch(){
 
 }
 
-document.querySelectorAll(".product-card").forEach(card => {
-
-    card.addEventListener("click", function(e){
-
-        e.preventDefault();
-
-        const id = this.dataset.productId;
-
-        openOrderModal(id);
-
-    });
-
-});
 
 
 /* ==========================
@@ -370,31 +363,32 @@ closeOrderModal
 
 );
 
-document.addEventListener(
+/* ==========================================
+PRODUCT CARD CLICK
+========================================== */
 
-"click",
+grid.addEventListener("click", (e) => {
 
-e=>{
+    const card = e.target.closest(".product-card");
 
-const btn=e.target.closest(".product-btn");
+    if (!card) return;
 
-if(!btn) return;
+    e.preventDefault();
 
-if(btn.classList.contains("out-stock"))
-return;
+    if (card.dataset.stock === "false") return;
 
-openOrderModal({
+    openOrderModal({
 
-name:btn.dataset.name,
+        name: card.dataset.name,
 
-category:btn.dataset.category,
+        category: card.dataset.category,
 
-price:btn.dataset.price,
+        price: card.dataset.price,
 
-oldPrice:btn.dataset.oldprice,
+        oldPrice: card.dataset.oldprice,
 
-image:btn.dataset.image
+        image: card.dataset.image
 
-});
+    });
 
 });
