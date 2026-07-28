@@ -2165,31 +2165,45 @@ transform:translateX(4px);
 
 .modal-tags{
 
-display:flex;
+    display:flex;
 
-justify-content:center;
+    justify-content:center;
 
-gap:10px;
+    align-items:center;
 
-flex-wrap:wrap;
+    gap:8px;
 
-margin-bottom:16px;
+    margin-bottom:16px;
 
 }
 
 .modal-badge{
 
-padding:7px 14px;
+    display:inline-flex;
 
-border-radius:999px;
+    align-items:center;
 
-background:var(--badge-warning-bg);
+    justify-content:center;
 
-color:var(--badge-warning-text);
+    gap:4px;
 
-font-size:12px;
+    height:28px;
 
-font-weight:700;
+    padding:0 10px;
+
+    border-radius:999px;
+
+    background:var(--badge-warning-bg);
+
+    color:var(--badge-warning-text);
+
+    font-size:11px;
+
+    font-weight:700;
+
+    line-height:1;
+
+    white-space:nowrap;
 
 }
 
