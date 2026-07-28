@@ -2212,3 +2212,44 @@ color:#fff;
 transform:rotate(90deg);
 
 }
+
+/* ===========================
+   ORDER FORM VALIDATION
+=========================== */
+
+.input-group{
+    position:relative;
+}
+
+.input-error{
+
+    border-color:#EF4444 !important;
+
+    box-shadow:
+    0 0 0 3px rgba(239,68,68,.15);
+
+}
+
+.error-message{
+
+    display:block;
+
+    margin-top:6px;
+
+    font-size:12px;
+
+    color:#EF4444;
+
+    line-height:1.4;
+
+}
+
+.order-submit:disabled{
+
+    opacity:.6;
+
+    cursor:not-allowed;
+
+    pointer-events:none;
+
+}
