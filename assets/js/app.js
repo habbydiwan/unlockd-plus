@@ -371,67 +371,6 @@ function validateOrderForm(){
 
     }
 
-    function generateWhatsAppMessage(){
-
-    const name =
-        document.getElementById("customerName").value.trim();
-
-    const email =
-        document.getElementById("customerEmail").value.trim();
-
-    const phone =
-        document.getElementById("customerPhone").value.trim();
-
-    const note =
-        document.getElementById("customerNote").value.trim();
-
-    return `Halo Admin UNLOCKD+ 👋
-
-Saya ingin melakukan pemesanan.
-
-━━━━━━━━━━━━━━
-
-📦 Produk :
-${selectedProduct.name}
-
-💰 Harga :
-Rp${selectedProduct.price}
-
-━━━━━━━━━━━━━━
-
-👤 Nama :
-${name}
-
-📧 Email :
-${email}
-
-📱 WhatsApp :
-${phone}
-
-📝 Catatan :
-${note}
-
-━━━━━━━━━━━━━━
-
-Mohon informasi untuk proses selanjutnya.
-
-Terima kasih 🙏`;
-
-}
-
-function redirectToWhatsApp(){
-
-    const adminNumber = "6281717893400";
-
-    const message = generateWhatsAppMessage();
-
-    const url =
-`https://wa.me/${adminNumber}?text=${encodeURIComponent(message)}`;
-
-    window.open(url,"_blank");
-
-}
-
 
 
     if(email.value.trim()===""){
@@ -491,6 +430,67 @@ function redirectToWhatsApp(){
 
 
     return valid;
+
+}
+
+function generateWhatsAppMessage(){
+
+    const name =
+        document.getElementById("customerName").value.trim();
+
+    const email =
+        document.getElementById("customerEmail").value.trim();
+
+    const phone =
+        document.getElementById("customerPhone").value.trim();
+
+    const note =
+        document.getElementById("customerNote").value.trim();
+
+    return `Halo Admin UNLOCKD+ 👋
+
+Saya ingin melakukan pemesanan.
+
+━━━━━━━━━━━━━━
+
+📦 Produk :
+${selectedProduct.name}
+
+💰 Harga :
+Rp${selectedProduct.price}
+
+━━━━━━━━━━━━━━
+
+👤 Nama :
+${name}
+
+📧 Email :
+${email}
+
+📱 WhatsApp :
+${phone}
+
+📝 Catatan :
+${note}
+
+━━━━━━━━━━━━━━
+
+Mohon informasi untuk proses selanjutnya.
+
+Terima kasih 🙏`;
+
+}
+
+function redirectToWhatsApp(){
+
+    const adminNumber = "6281717893400";
+
+    const message = generateWhatsAppMessage();
+
+    const url =
+`https://wa.me/${adminNumber}?text=${encodeURIComponent(message)}`;
+
+    window.open(url,"_blank");
 
 }
 
