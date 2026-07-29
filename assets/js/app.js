@@ -312,6 +312,9 @@ document.getElementById("modalPrice");
 const modalOldPrice =
 document.getElementById("modalOldPrice");
 
+const modalSave =
+document.getElementById("modalSave");
+
 const closeModal =
 document.querySelector(".order-close");
 
@@ -534,6 +537,9 @@ function openOrderModal(product){
     modalOldPrice.textContent=
         "Rp"+product.oldPrice;
 
+    modalSave.textContent =
+`Hemat ${product.discount.replace("-", "")}`;
+
     clearValidation();
 
 document.querySelector(".order-form").reset();
@@ -599,17 +605,19 @@ grid.addEventListener("click", (e) => {
 
     openOrderModal({
 
-        name: card.dataset.name,
+    name: card.dataset.name,
 
-        category: card.dataset.category,
+    category: card.dataset.category,
 
-        price: card.dataset.price,
+    price: card.dataset.price,
 
-        oldPrice: card.dataset.oldprice,
+    oldPrice: card.dataset.oldprice,
 
-        image: card.dataset.image
+    image: card.dataset.image,
 
-    });
+    discount: card.querySelector(".discount").textContent
+
+});
 
 });
 
