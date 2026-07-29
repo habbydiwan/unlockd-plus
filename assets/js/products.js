@@ -476,10 +476,21 @@ stock:true
 {
 category:"gaming",
 name:"Joki Mobile Legends",
-image:"assets/img/products/mobile-legends.png",
+image:"assets/img/products/mole.png",
 price:"5.000",
 oldPrice:"10.000",
-badge:"Hot🔥",
+badge:"POPULAR",
+discount:"-50%",
+stock:true
+}
+
+{
+category:"gaming",
+name:"Joki Free Fire",
+image:"assets/img/products/freefire.png",
+price:"5.000",
+oldPrice:"10.000",
+badge:"POPULAR",
 discount:"-50%",
 stock:true
 }
