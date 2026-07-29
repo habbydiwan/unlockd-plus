@@ -482,7 +482,7 @@ oldPrice:"10.000",
 badge:"POPULAR",
 discount:"-50%",
 stock:true
-}
+},
 
 {
 category:"gaming",
