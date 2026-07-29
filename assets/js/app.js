@@ -18,7 +18,7 @@ const grid=document.getElementById("productGrid");
 
 const searchInput = document.getElementById("searchProduct");
 
-function renderProducts(category="ai", customProducts=null){
+function renderProducts(category="entertainment", customProducts=null){
 
 grid.innerHTML="";
 
@@ -130,7 +130,7 @@ if (typeof AOS !== "undefined") {
 
 }
 
-renderProducts("ai");
+renderProducts("entertainment");
 
 searchInput.addEventListener("input",handleSearch);
 
