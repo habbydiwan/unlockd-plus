@@ -58,7 +58,7 @@ stock:false
 {
 category:"entertainment",
 name:"Disney+ Sharing 10U 1 Bulan",
-image:"assets/img/products/disneyHot🔥star.png",
+image:"assets/img/products/disneyplushotstar.png",
 price:"21.000",
 oldPrice:"32.000",
 badge:"Popular",
@@ -69,7 +69,7 @@ stock:true
 {
 category:"entertainment",
 name:"Disney+ Sharing 6U 1 Bulan",
-image:"assets/img/products/disneyHot🔥star.png",
+image:"assets/img/products/disneyplushotstar.png",
 price:"27.000",
 oldPrice:"38.000",
 badge:"Popular",
