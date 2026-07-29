@@ -79,6 +79,28 @@ stock:true
 
 {
 category:"entertainment",
+name:"YouTube Famplan 1 Bulan",
+image:"assets/img/products/youtube.png",
+price:"6.000",
+oldPrice:"12.000",
+badge:"Popular",
+discount:"-50%",
+stock:true
+},
+
+{
+category:"entertainment",
+name:"YouTube Indplan Gsuite 1 Bulan",
+image:"assets/img/products/youtube.png",
+price:"12.000",
+oldPrice:"24.000",
+badge:"Popular",
+discount:"-50%",
+stock:true
+},
+
+{
+category:"entertainment",
 name:"Prime Video Sharing 1 Bulan",
 image:"assets/img/products/primevideo.png",
 price:"7.000",
