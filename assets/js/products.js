@@ -41,7 +41,7 @@ price:"30.000",
 oldPrice:"42.000",
 badge:"Limited",
 discount:"-28%",
-stock:false
+stock:true
 },
 
 {
@@ -52,7 +52,7 @@ price:"19.000",
 oldPrice:"28.000",
 badge:"Limited",
 discount:"-32%",
-stock:false
+stock:true
 },
 
 {
